@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 700px;
+            height: 150px;
+            margin-left: 300px;
+            background-color: #ce7171;
+        }
+
+        .auto-style7 {
+            text-align: left;
+        }
+
+        .auto-style9 {
+            width: 700px;
+            height: 309px;
+        }
+        .auto-style10 {
+            width: 100%;
+            height: 290px;
+            background-color: #3399FF;
+        }
+        .auto-style11 {
+            width: 200px;
+            float: left;
+            height: 298px;
+            background-color: #0066FF;
+        }
+        .auto-style12 {
+            background-color: #3399FF;
+        }
+        .auto-style13 {
+            height: 29px;
+            width: 190px;
+            background-color: #3399FF;
+        }
+        .auto-style14 {
+            width: 190px;
+        }
+        .auto-style15 {
+            width: 190px;
+            height: 26px;
+        }
+        .auto-style16 {
+            width: 190px;
+            background-color: #3399FF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style1">
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Resimler/login1.jpg" Width="700px" />
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
+        <div style="margin-left: 300px; " class="auto-style9">
+            <div style="margin-left: 0px;" class="auto-style11">
+                <div class="auto-style7">
+                    <table class="auto-style10">
+                        <tr>
+                            <td class="auto-style14">MENÜLER</td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style15"></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style13" style="border: thin solid #FFFFFF"><a href="Kategoriler.aspx">KATEGORİLER</a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style16"><a href="Yemekler.aspx">YEMEKLER</a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style16"><a href="Yorumlar.aspx">YORUMLAR</a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style16"><a href="Mesajlar.aspx">MESAJLAR</a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style16"><a href="GununYemegiAdmin.aspx">GÜNÜN YEMEĞİ</a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style16"><a href="Tarifler.aspx">TARİFLER</a></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style13" style="border: thin solid #FFFFFF"><a href="HakkimizdaAdmin.aspx">HAKKIMIZDA</a></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style14">&nbsp;</td>
+                        </tr>
+                    </table>
+                    <br />
+                </div>
+            </div>
+            <div style="width: 450px; float: left; height: auto; margin-left: 50px;" class="auto-style12">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
+
+
